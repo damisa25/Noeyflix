@@ -1,0 +1,311 @@
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 50px 50px 1000px black,inset -50px -50px 400px black; 
+}
+
+.container-member
+{
+    text-indent: 15%;
+    color: rgb(53, 47, 47);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.noeyflix-image
+{
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 85%;
+    
+}
+
+
+
+.sign-btn
+{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    left: 90%;
+    background: rgb(201, 42, 95);
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 2px;
+    border: 0; 
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5em 0;
+    padding: 0;
+}
+
+.sub-container
+{
+    margin-top: 70px;
+}
+
+.see
+{
+    font-size: 85px;
+    font-weight: 700;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.watch
+{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.join-btn
+{
+    border: 0;
+    background: rgb(201, 42, 95);
+    padding: 20px 80px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+.container-summit
+{
+
+    position: relative;
+    text-align: center;
+}
+.summit-btn
+{
+  position: relative;
+  background-color: rgb(194, 54, 101);
+  border: none;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #FFFFFF;
+  padding: 16px;
+  width: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.summit-btn:hover {
+  background-color: rgb(215, 11, 79);
+  right: 0;
+}
+/*inline*/
+.inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-weight: lighter;
+  }
+  
+  .inline label {
+    margin: 10px 15px 10px 20;
+  }
+  
+  .inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 15px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  .inline input:focus{
+    border: 2px solid palevioletred;
+  }
+  
+  @media (max-width: 800px) {
+    .inline input {
+      margin: 10px 0;
+    }
+    
+    .inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .container-plan {
+    display: block;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 12px;
+    left: 40%;
+    cursor: pointer;
+    color: gray;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-plan input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-plan:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-plan input:checked ~ .checkmark {
+    background-color: rgb(201, 42, 95);
+    color:  rgb(201, 42, 95);
+    
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-plan input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container-plan-font {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    left: 38%;
+    font-size: 120%;
+    cursor: pointer;
+    color:white;
+  }
+
+  .container-plan-font1 {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    left: 38%;
+    font-size: 100%;
+    color:gray;
+  }
+
+  .container-member-2
+{
+    text-indent: 15%;
+    color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.select-selected {
+  background-color: rgb(201, 42, 95);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: rgb(201, 42, 95);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  font-size: 22px;
+
+}
